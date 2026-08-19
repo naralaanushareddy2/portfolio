@@ -1,0 +1,267 @@
+/* =========================
+   Home / Hero Section
+========================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 8%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================
+   Left Side Content
+========================= */
+
+.hero-content {
+    width: 55%;
+    max-width: 700px;
+    text-align: left;
+}
+
+.hero-content > p:first-child {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #000000;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 20px 0 30px;
+    color: #000000;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.hero-btn {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.hero-btn .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.primary-btn:hover {
+    background-color: transparent;
+    color: #000000;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.secondary-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* =========================
+   Social Links
+========================= */
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+
+    color: #000000;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.social-links a svg {
+    font-size: 22px;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    border-color: #000000;
+}
+
+
+/* =========================
+   Profile Image
+========================= */
+
+.hero-image {
+    width: 40%;
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* Soft background behind photo */
+
+.profile-background {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background-color: #e5f5f4;
+
+    border-radius: 50%;
+
+    z-index: 0;
+}
+
+
+/* Profile photo */
+
+.hero-image img {
+    position: relative;
+    z-index: 1;
+
+    width: 380px;
+    height: 500px;
+
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 6%;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-btn {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 23px;
+    }
+
+    .hero-content > p:first-child {
+        font-size: 18px;
+    }
+
+    .hero-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-btn .btn {
+        width: 180px;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .profile-background {
+        width: 380px;
+        height: 380px;
+    }
+}

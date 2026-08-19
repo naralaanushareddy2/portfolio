@@ -1,0 +1,309 @@
+/* =================================
+   CONTACT SECTION
+================================= */
+
+.contact {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: #f5f7fb;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.contact-subtitle {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.contact-heading h1 {
+  margin-bottom: 15px;
+  font-size: 42px;
+  color: #222;
+}
+
+.contact-intro {
+  max-width: 650px;
+  margin: auto;
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* =================================
+   CONTACT INFORMATION
+================================= */
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 45px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 25px;
+
+  background: white;
+  border-radius: 16px;
+
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  min-width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #eef1ff;
+  color: #4b55c9;
+
+  font-size: 21px;
+}
+
+.contact-card h3 {
+  margin-bottom: 6px;
+  font-size: 17px;
+  color: #222;
+}
+
+.contact-card a,
+.contact-card p {
+  margin: 0;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact-card a:hover {
+  color: #4b55c9;
+}
+
+
+/* =================================
+   PROFESSIONAL PROFILES
+================================= */
+
+.professional-section {
+  padding: 35px;
+
+  background: white;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+
+  margin-bottom: 30px;
+}
+
+.professional-section h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #222;
+}
+
+.professional-section > p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* =================================
+   PROFILE LINKS
+================================= */
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 11px 18px;
+
+  border-radius: 9px;
+
+  background: #f5f6fa;
+  color: #333;
+
+  text-decoration: none;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.profile-link svg {
+  font-size: 18px;
+}
+
+.profile-link:hover {
+  transform: translateY(-3px);
+  background: #eef1ff;
+  color: #4b55c9;
+}
+
+
+/* =================================
+   CONTACT ACTIONS
+================================= */
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin: 30px 0;
+
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 12px 22px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #222;
+  color: white;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  color: white;
+}
+
+.secondary-btn {
+  background: white;
+  color: #333;
+
+  border: 1px solid #ddd;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-3px);
+  background: #f5f6fa;
+}
+
+
+/* =================================
+   FINAL MESSAGE
+================================= */
+
+.contact-message {
+  text-align: center;
+
+  padding: 30px;
+
+  background: white;
+  border-radius: 18px;
+
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.05);
+}
+
+.contact-message h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #222;
+}
+
+.contact-message p {
+  max-width: 600px;
+  margin: auto;
+
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .contact {
+    padding: 55px 15px;
+  }
+
+  .contact-heading h1 {
+    font-size: 32px;
+  }
+
+  .professional-section {
+    padding: 25px 18px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+
+}
