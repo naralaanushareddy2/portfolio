@@ -8,7 +8,7 @@ import Skills from './src/pages/Skills'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './src/pages/Home'
 import ChatbotProject from './src/pages/project-details/ChatbotProject'
-import TIEOProject from './src/pages/project-details/Tieoproject'
+import TIEOProject from './src/pages/project-details/TIEOproject'
 import PortfolioProject from './src/pages/project-details/PortfolioProject'
 import TempleProject from './src/pages/project-details/TempleProject'
 
